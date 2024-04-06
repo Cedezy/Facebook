@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgb(247, 247, 247);
+        position: relative;
+        top: 20px;
+    }
+    img{
+        width: 320px;
+    }
+    h2{
+        padding: 0 60px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 100;
+        text-align: center;
+        font-size: 23px;
+    }
+    .form{
+        width: 400px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 18px 18px;
+        margin-top: 40px;
+    }
+    input[type = "text"]{
+        width: 100%;
+        padding: 17px 17px;
+        border-radius: 5px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        outline: none;
+    }
+    input[type="text"]:focus{
+        border: 2px solid rgb(103, 103, 255);
+    }
+
+    .Email{
+        width: 100%;
+        padding-bottom: 15px;
+    }
+    .Password{
+        width: 100%;
+        padding-bottom: 15px;
+    }
+    .button{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .btn{
+        width: 100%;
+        padding: 15px 0;
+        border-radius: 5px;
+        background-color: #0866ff;
+        border: none;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .forgot a{
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+    .forgot a:hover{
+        text-decoration: underline;
+    }
+    .hor{
+        width: 100%;
+    }
+    hr{
+        opacity: 0.3;
+        margin: 20px 0;
+        width: 100%;
+    }
+    .create-btn{
+        width: 100%;
+        padding: 15px 15px;
+        background-color: #42b72a;
+        border: none;
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        font-weight: bold;
+        border-radius: 7px;
+        cursor: pointer;
+    }
+    .foot{
+        position: relative;
+        top: 30px;
+    }
+    P{
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .page{
+        font-weight: bold;
+        color: black;
+        text-decoration: none;
+    }
+    .page:hover{
+        text-decoration: underline;
+    }
+</style>
+<body>
+    <div class="facebook">
+        <img src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" alt="">
+    </div>
+    <div class="text">
+        <h2>Connect with friends and the world around you on Facebook.</h2>
+    </div>
+    <div class="form">
+        <div class="Email">
+            <input type="text" id="username" placeholder="Email or phone number">
+        </div>
+        <div class="Password">
+            <input type="text" id="username" placeholder="Password">
+        </div>
+        <div class="button">
+            <button class="btn" onclick="alert('BOANG KA! MALI IMONG PASSWORD!')">Log in</button>
+        </div>
+        <div class="forgot">
+            <a href="#" onclick="alert('DUH! CHANGE PASSWORD PA AMAW!')">Forgot password?</a>
+        </div>
+        <div class="hor">
+            <hr>
+        </div>
+        <div class="create-button">
+            <button class="create-btn" onclick="alert('OH PANGABIT PA!')">Create new account</button>
+        </div>
+    </div>
+    <div class="foot">
+        <p><a class="page" href="#" onclick="alert('PUYO OY!')">Create a Page</a> for a celebrity, brand or business.</p>
+    </div>
+</body>
+</html>
